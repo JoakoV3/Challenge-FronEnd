@@ -1,0 +1,90 @@
+@font-face {
+  font-family: Main;
+  src: url(/Assets/Rubik-Regular.ttf);
+}
+@font-face {
+  font-family: Main-Medium;
+  src: url(/Assets/Rubik-Medium.ttf);
+}
+@font-face {
+  font-family: Main-Italic;
+  src: url(/Assets/Rubik-Italic.ttf);
+}
+@font-face {
+  font-family: Main-SBold;
+  src: url(/Assets/Rubik-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Main-Bold;
+  src: url(/Assets/Rubik-Bold.ttf);
+}
+
+body {
+  background-color: #ececec;
+  font-family: Main;
+}
+.font-sbold{
+  font-family: Main-SBold;
+}
+
+.font-bold{
+  font-family: Main-Bold;
+}
+.w-60{
+  width: 60%;
+}
+.px-10 {
+  padding: 0 10rem;
+}
+.mx-1200{
+  max-width: 1200px;
+}
+.ms-6{
+  margin-left: 4rem;
+}
+
+.rounded-8{
+  border-radius: .8rem;
+}
+.outline-none {
+  outline: none;
+}
+.icon, 
+.ch-text{
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0;
+}
+.char-list li{
+  margin-bottom: 20px;
+}
+
+.av-rates .item{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+column-gap: 7rem;
+}
+
+.selectGroup {
+  border: none;
+}
+
+.selectGroup option{
+  display: block;
+  background-color: white;
+  padding: 2rem;
+  border: none;
+  height: 2rem;
+}
+.option {
+  height: 2rem;
+}
+.filter-check{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.filter-check input{
+  accent-color: #dc3545;
+}
