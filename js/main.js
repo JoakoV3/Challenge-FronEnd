@@ -11,7 +11,6 @@ jQuery(function () {
         $.each(currentJson.cars, (i, car) => {
           carContainer.append(carComponent(car))
         })
-        console.log(currentJson)
       } else {
         carContainer.empty();
         $.each(data, (i, car) => {
@@ -26,7 +25,6 @@ jQuery(function () {
     carContainer.empty();
     if (selectedGroup == 'all') {
       currentJson
-      console.log(currentJson);
       $.each(currentJson, (i, car) => {
         carContainer.append(carComponent(car))
       })
@@ -58,7 +56,6 @@ jQuery(function () {
           currentJson = Object.values(currentJson).filter(function (item) {
             return item.TransmissionType == 'Automatic';
           })
-          console.log(currentJson);
         } else {
           if (!currentJson.cars) {
             currentJson = Object.values(currentJson).filter(function (item) {
@@ -81,7 +78,6 @@ jQuery(function () {
           currentJson = Object.values(currentJson).filter(function (item) {
             return item.TransmissionType == 'Manual';
           })
-          console.log(currentJson);
         } else {
           if (!currentJson.cars) {
             currentJson = Object.values(currentJson).filter(function (item) {
@@ -100,7 +96,6 @@ jQuery(function () {
     if ($("#5-seats").prop("checked")) {
       if (currentJson.length != 0) {
         if (selectedGroup != 'all') {
-          console.log('entro aca');
           currentJson = Object.values(currentJson).filter(function (item) {
             return item.Features2.seats == '5';
           })
@@ -132,7 +127,6 @@ jQuery(function () {
             })
           } else {
             currentJson = Object.values(currentJson.cars).filter(function (item) {
-              console.log(parseInt( item.Company1.Features2.seats) > parseInt('5'));
               return parseInt( item.Company1.Features2.seats) > parseInt('5');
             })
           }
